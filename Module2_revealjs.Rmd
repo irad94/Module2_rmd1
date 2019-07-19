@@ -1,15 +1,14 @@
 ---
-title: "Module 2 - ioslides"
+title: "Module 2 - Reveal JS Presentation"
 author: "Irad Olivares Rivas"
-date: "30/6/2019"
-output:
-  ioslides_presentation: default
-  slidy_presentation: default
+date: "July 18, 2019"
+output: 
+  revealjs::revealjs_presentation:
+    transition: zoom
+    theme: solarized
+    highlight: kate
+    center: true
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 ## R Markdown
 
@@ -23,15 +22,15 @@ When you click the **Knit** button a document will be generated that includes bo
 - Bullet 2
 - Bullet 3
 
-## Slide with R Output
+## Slide with R Code and Output
 
-```{r cars, echo = TRUE}
+```{r}
 summary(cars)
 ```
 
 ## Slide with Plot
 
-```{r pressure}
-plot(pressure)
+```{r, echo=FALSE}
+plot(cars)
 ```
 
